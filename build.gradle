@@ -1,0 +1,42 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            name = 'SpongePowered'
+            url = 'http://repo.spongepowered.org/maven'
+        }
+
+        dependencies {
+           
+        }
+    }
+}
+
+apply plugin: 'java'
+
+
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        name = 'spongepowered-repo'
+        url = 'http://repo.spongepowered.org/maven/'
+    }
+    maven {
+        url = "http://repo.kingdev.nl/artifactory/Libraries"
+    }
+}
+dependencies {
+	dependencies {
+    //compile project('../:BukkitASM')
+}
+
+
+}
+
