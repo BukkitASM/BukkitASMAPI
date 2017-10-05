@@ -21,5 +21,15 @@ public class PluginManager {
 
     }
 
+    public List<ILoadingPlugin> getPlugins() {
+        return plugins;
+    }
 
+    public File getPluginsDir() {
+        return pluginsDir;
+    }
+
+    public void setPlugins(List<ILoadingPlugin> plugins) {
+        this.plugins = plugins;
+    }
 }

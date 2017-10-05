@@ -15,6 +15,7 @@ public class ILoadingData {
     public ILoadingData(String name, String version) {
         this.name = name;
         this.version = version;
+        transformers = new ArrayList<ITransformer>();
     }
 
     public String getName() {
